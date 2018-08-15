@@ -14,7 +14,7 @@ public abstract class Pizza {
     public String name;
     public String dough;
     public String sauce;
-    public ArrayList toppings = new ArrayList();
+    public ArrayList<String> toppings = new ArrayList();
 
     public void prepare() {
         System.out.println("Preparing " + name);
