@@ -6,10 +6,6 @@ import factory.pizza.ChicagoPizza.ChicagoStyleCheesePizza;
 import factory.pizza.ChicagoPizza.ChicagoStyleClamPizza;
 import factory.pizza.ChicagoPizza.ChicagoStylePepperoniPizza;
 import factory.pizza.ChicagoPizza.ChicagoStyleVeggiePizza;
-import factory.pizza.nypizza.NYStyleCheesePizza;
-import factory.pizza.nypizza.NYStyleClamPizza;
-import factory.pizza.nypizza.NYStylePepperoniPizza;
-import factory.pizza.nypizza.NYStyleVeggiePizza;
 
 public class ChicagoPizzaStore extends PizzaStore {
     @Override

@@ -1,5 +1,6 @@
 package factory.pizza.ChicagoPizza;
 
+
 import factory.Pizza;
 
 public class ChicagoStyleCheesePizza extends Pizza {
