@@ -24,7 +24,6 @@ public class DuckTestDrive {
         testDuck(duck);
 
 
-        
 
         System.out.println("\nThe TurkeyAdapter says...");
         testDuck(turkeyAdapter);
