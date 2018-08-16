@@ -14,7 +14,7 @@ public class DuckTestDrive {
         MallardDuck duck = new MallardDuck();
         //火鸡对象
         WildTurkey turkey = new WildTurkey();
-        //火鸡适配器
+        //火鸡适配器,将火鸡适配成鸭子对象
         Duck turkeyAdapter = new TurkeyAdapter(turkey);
         System.out.println("The Turkey says...");
         turkey.gobble();
