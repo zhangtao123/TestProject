@@ -23,8 +23,6 @@ public class DuckTestDrive {
         System.out.println("\nThe Duck says...");
         testDuck(duck);
 
-
-
         System.out.println("\nThe TurkeyAdapter says...");
         testDuck(turkeyAdapter);
     }
