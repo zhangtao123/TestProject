@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  * Date: 2018/8/19
  * Time: 0:20
  * To change this template use File | Settings | File Templates.
- * Description:看自己时，可以设置自己的信息，但是不能修改自己的打分
+ * Description:（调用处理器）看自己时，可以设置自己的信息，但是不能修改自己的打分
  */
 public class OwnerInvocationHandler implements InvocationHandler {
 

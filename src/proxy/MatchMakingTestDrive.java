@@ -22,6 +22,7 @@ public class MatchMakingTestDrive {
 
         //获取代理对象proxy
         PersonBean ownerProxy = getOwnerProxy(joe);
+
         //调用代理对象的方法--》会调用处理器invocationHandler的invoke()方法
         System.out.println("name is " + ownerProxy.getName());
         ownerProxy.setInterests("bowling,go");

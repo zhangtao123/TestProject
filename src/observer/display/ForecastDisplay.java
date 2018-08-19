@@ -1,4 +1,8 @@
-package observer;
+package observer.display;
+
+import observer.DisplayElement;
+import observer.Observer;
+import observer.Subject;
 
 /**
  * Created with IntelliJ IDEA.

@@ -1,21 +1,25 @@
-package observer;
+package observer.display;
+
+import observer.DisplayElement;
+import observer.Observer;
+import observer.Subject;
 
 /**
  * Created with IntelliJ IDEA.
  * User: User
  * Date: 2018/8/14
- * Time: 15:36
+ * Time: 15:57
  * To change this template use File | Settings | File Templates.
- * Description: 布告板实现
+ * Description:
  */
-public class CurrentConditionsDisplay implements Observer,DisplayElement {
-
-
+public class StatisticsDisplay implements Observer, DisplayElement {
     private float temperature;
     private float humidity;
+    private float pressure;
+
     private Subject weatherData;
 
-    public CurrentConditionsDisplay(Subject weatherData) {
+    public StatisticsDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
@@ -23,13 +27,14 @@ public class CurrentConditionsDisplay implements Observer,DisplayElement {
 
     @Override
     public void display() {
-        System.out.println("Current conditions: " + temperature + "F degrees and " + humidity + "% humidity");
+        System.out.println("Avg/Max/Min temperature =" + temperature + "/" + humidity + "/" + pressure);
     }
 
     @Override
     public void update(float temperature, float humidity, float pressure) {
         this.temperature = temperature;
         this.humidity = humidity;
+        this.pressure = pressure;
         display();
     }
 }
