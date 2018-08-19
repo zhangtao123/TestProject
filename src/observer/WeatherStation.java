@@ -1,5 +1,9 @@
 package observer;
 
+import observer.display.CurrentConditionsDisplay;
+import observer.display.ForecastDisplay;
+import observer.display.StatisticsDisplay;
+
 /**
  * Created with IntelliJ IDEA.
  * User: User
