@@ -2,6 +2,7 @@ package blockingQueue;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.SynchronousQueue;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,7 +13,10 @@ import java.util.concurrent.LinkedBlockingQueue;
  * Description:
  */
 public class WorkDesk {
-    BlockingQueue<String> desk = new LinkedBlockingQueue<String>(10);
+    //BlockingQueue<String> desk = new LinkedBlockingQueue<String>(10);
+
+    BlockingQueue<String> desk = new SynchronousQueue(true);
+
 
     public void washDish() throws InterruptedException {
         desk.put("洗好一个盘子");
