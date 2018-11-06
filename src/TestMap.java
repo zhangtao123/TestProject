@@ -1,6 +1,5 @@
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,8 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class TestMap {
 
 
-
-    public static void do1(){
+    public static void do1() {
 //        Map<String,Object> map1 = new ConcurrentHashMap<String, Object>();
 //
 //        Map<String,Object> map2 = Collections.synchronizedMap();
@@ -33,10 +31,9 @@ public class TestMap {
     }
 
 
-    public static void do2(){
-        Map<Integer,String> map = new HashMap<Integer,String>();
-        map.put(3,"111");
-
+    public static void do2() {
+        Map<Integer, String> map = new HashMap<Integer, String>();
+        map.put(3, "111");
 
 
         Integer in = map.keySet().iterator().next();
@@ -46,8 +43,7 @@ public class TestMap {
     }
 
 
-
-    public static void do3(){
+    public static void do3() {
         Map<String, Integer> map = new HashMap();
         map.put("1", 8);
         map.put("2", 12);
@@ -56,13 +52,43 @@ public class TestMap {
         map.put("5", 11);
         map.put("6", 3);
         map.put("7", 3);
-        List<Map.Entry<String,Integer>> list = new ArrayList(map.entrySet());
+        List<Map.Entry<String, Integer>> list = new ArrayList(map.entrySet());
         Collections.sort(list, (o1, o2) -> (o2.getValue() - o1.getValue()));
         System.out.println(list.get(0).getKey());
         System.out.println(list.get(1).getKey());
     }
 
+
+    public static int parseInger(int i) {
+        //'>>'缩小一倍,反之'<<'则扩大一倍
+        int n = i >> 1;
+        System.out.println(n);
+        return n;
+    }
+
+
+    public static int do6() {
+        int i = 0, j = 0;
+        if (i == 1 & j == 2) {
+            System.out.println(1 & 2);
+        }
+        System.out.println(1 & 2);
+        return 1 & 2;
+    }
+
+
+    public static void do7(){
+        String str1 = new String("123");
+        String str2 = new String("123");
+        System.out.println(str1.hashCode());
+        System.out.println(str2.hashCode());
+        System.out.println(str1==str2);
+        System.out.println(str1.equals(str2));
+    }
+
     public static void main(String[] args) {
-        do3();
+        //do3();
+        //parseInger(2);
+        do7();
     }
 }
