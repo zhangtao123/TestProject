@@ -1,5 +1,7 @@
-import java.util.List;
+/*
+import src.test1.TestPro;
 
+*/
 /**
  * Created with IntelliJ IDEA.
  * User: User
@@ -7,7 +9,8 @@ import java.util.List;
  * Time: 16:44
  * To change this template use File | Settings | File Templates.
  * Description:
- */
+ *//*
+
 public class TestT {
 
     public static void main(String[] args) {
@@ -61,12 +64,14 @@ public class TestT {
     }
 
 
-    /*
+    */
+/*
      java中的泛型，在编译后会被擦除，变成一样的原生类型List<E>，导致方法参数一致，无法被重载
      public void method(List<String> list){}
 
     public void method(List<Integer> list){}
-    */
+    *//*
+
 
 
     public <T> T getObject(Class<T> c) throws InstantiationException,IllegalAccessException{
@@ -74,4 +79,4 @@ public class TestT {
          return t;
     }
 
-}
+}*/
