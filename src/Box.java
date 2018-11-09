@@ -1,3 +1,5 @@
+package src;
+
 /**
  * Created with IntelliJ IDEA.
  * User: User

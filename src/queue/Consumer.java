@@ -3,7 +3,7 @@ package src.queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class Consumer extends Thread {
-    ArrayBlockingQueue<String> abq = null;
+    ArrayBlockingQueue<String> abq;
 
     public Consumer(ArrayBlockingQueue<String> abq) {
         super();
