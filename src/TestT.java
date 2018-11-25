@@ -32,6 +32,11 @@ public class TestT {
         getData(age);
         getData(number);
 
+        Box<Number> b = new Box<>(718);
+        System.out.println(b.getData().getClass());
+        Integer in = 123;
+        b.setData(in);
+        System.out.println(b.getData().getClass());
     }
 
 
@@ -58,6 +63,12 @@ public class TestT {
         System.out.println("data :" + data.getData());
     }
 
+
+    /* public static <T,K> T getAllData(Box<K> box){
+        System.out.println(box.getData());
+        T str = box.getData();
+        return str;
+    }*/
 
 /*
      java中的泛型，在编译后会被擦除，变成一样的原生类型List<E>，导致方法参数一致，无法被重载

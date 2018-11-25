@@ -182,8 +182,14 @@ public class TestMap {
         array.remove();
     }
 
+    //+43  -45  48~57
+    public static void do9(){
+        char c = '9';
+        System.out.println((int) c);
+    }
+
 
     public static void main(String[] args) {
-        do7();
+        do9();
     }
 }
