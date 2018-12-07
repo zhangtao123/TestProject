@@ -1,5 +1,4 @@
-import src.Person;
-
+package src;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -206,7 +205,7 @@ public class TestMap {
         list.add(3);
         list.add(88);
         list.add(16);
-        list.sort(Comparator.comparingInt(o -> o.intValue()));
+        list.sort(Comparator.comparingInt(o -> o));
         //list.sort((o1, o2) -> (o1.intValue() - o2.intValue()));
         System.out.println(list);
 
