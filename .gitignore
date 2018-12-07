@@ -1,8 +1,6 @@
 /build/
 ### IntelliJ IDEA ###
-.idea
-*.iws
+/.idea
 *.iml
 /target
-*.ipr
-/out/
+.gitignore
