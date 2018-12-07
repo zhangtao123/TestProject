@@ -179,7 +179,11 @@ public class TestMap {
 
     //+43  -45  48~57
     public static void do9() {
+        System.out.println(1);
+        System.out.println(2);
+        System.out.println(3);
         char c = '9';
+        System.out.println((int) c);
         System.out.println((int) c);
     }
 
