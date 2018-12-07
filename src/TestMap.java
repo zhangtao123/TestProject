@@ -1,5 +1,4 @@
-import src.Person;
-
+package src;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -206,7 +205,7 @@ public class TestMap {
         list.add(3);
         list.add(88);
         list.add(16);
-        list.sort(Comparator.comparingInt(o -> o.intValue()));
+        list.sort(Comparator.comparingInt(o -> o));
         //list.sort((o1, o2) -> (o1.intValue() - o2.intValue()));
         System.out.println(list);
 
@@ -225,6 +224,23 @@ public class TestMap {
         list.remove(Integer.valueOf(6));
         list.remove(Integer.valueOf(88));
         System.out.println(list);
+        System.out.println("11111111111");
+    }
+
+
+    public static void do13() {
+        String str = "1,6,3,88,16";
+        String[] arr = str.split(",");
+        List<Integer> list = new ArrayList<>();
+        for (String str1 : arr) {
+            list.add(Integer.valueOf(str1));
+        }
+        //System.out.println(list.get(0).getClass().getName());
+        System.out.println(list);
+        list.remove(Integer.valueOf(6));
+        list.remove(Integer.valueOf(88));
+        System.out.println(list);
+        System.out.println("2222222");
     }
 
 

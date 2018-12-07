@@ -14,12 +14,13 @@
 .vscode
 
 ### IntelliJ IDEA ###
-.idea
-*.iws
+/.idea
 *.iml
+/target
+.gitignore
+
 *.ipr
 /target
 
-### NetBeans ###
 /build/
 
