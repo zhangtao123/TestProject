@@ -1,3 +1,5 @@
+package src;
+
 /**
  * Created with IntelliJ IDEA.
  * User: User
@@ -6,21 +8,21 @@
  * To change this template use File | Settings | File Templates.
  * Description:
  */
-public class Box<T> {
-    private T data;
+public class Box<K> {
+    private K data;
 
-    public Box(T data) {
+    public Box(K data) {
         this.data = data;
     }
 
     public Box() {
     }
 
-    public T getData() {
+    public K getData() {
         return data;
     }
 
-    public void setData(T data) {
+    public void setData(K data) {
         this.data = data;
     }
 }

@@ -1,4 +1,4 @@
-import java.util.concurrent.atomic.AtomicInteger;
+package src;
 
 /**
  * Created with IntelliJ IDEA.
