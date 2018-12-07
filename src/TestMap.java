@@ -178,11 +178,7 @@ public class TestMap {
 
     //+43  -45  48~57
     public static void do9() {
-        System.out.println(1);
-        System.out.println(2);
-        System.out.println(3);
         char c = '9';
-        System.out.println((int) c);
         System.out.println((int) c);
     }
 
@@ -224,24 +220,9 @@ public class TestMap {
         list.remove(Integer.valueOf(6));
         list.remove(Integer.valueOf(88));
         System.out.println(list);
-        System.out.println("11111111111");
     }
 
 
-    public static void do13() {
-        String str = "1,6,3,88,16";
-        String[] arr = str.split(",");
-        List<Integer> list = new ArrayList<>();
-        for (String str1 : arr) {
-            list.add(Integer.valueOf(str1));
-        }
-        //System.out.println(list.get(0).getClass().getName());
-        System.out.println(list);
-        list.remove(Integer.valueOf(6));
-        list.remove(Integer.valueOf(88));
-        System.out.println(list);
-        System.out.println("2222222");
-    }
 
 
     public static void main(String[] args) {
