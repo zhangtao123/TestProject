@@ -1,4 +1,5 @@
 package src;
+
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -223,9 +224,42 @@ public class TestMap {
     }
 
 
+    public static void do13() {
+        List<String> supperList = null;
+        for (String list : supperList) {
+            System.out.println(11111);
+        }
 
+    }
+
+
+    public static void do14() {
+        String line = "江苏,淮安市|江苏,南京市";
+        String[] str = line.split("\\|");
+        System.out.println(str.toString());
+        System.out.println(str[1]);
+    }
+
+
+    public static void do15() {
+        String line = "（埠蚌（国际）";
+        int head = line.indexOf('(');
+        System.out.println(head);
+    }
+
+
+    public static void do16() {
+        Person p = new Person();
+        if (1 == p.getAge()) {
+            System.out.println("111"+p.getAge());
+        }else {
+            System.out.println("222"+p.getAge());
+        }
+
+
+    }
 
     public static void main(String[] args) {
-        do12();
+        do16();
     }
 }
