@@ -256,22 +256,20 @@ public class TestMap {
     public static void do16() {
         Person p = new Person();
         if (1 == p.getAge()) {
-            System.out.println("111"+p.getAge());
-        }else {
-            System.out.println("222"+p.getAge());
+            System.out.println("111" + p.getAge());
+        } else {
+            System.out.println("222" + p.getAge());
         }
 
 
     }
 
 
-
     public static void do17() {
         String str = "南京911";
         System.out.println(str.indexOf("2"));
-        System.out.println(str.substring(0,str.indexOf("2")));
+        System.out.println(str.substring(0, str.indexOf("2")));
     }
-
 
 
     public static void do18() {
@@ -279,16 +277,16 @@ public class TestMap {
         list.add("111");
         list.add("333");
         list.add("666");
-        String str = StringUtils.join(list,",");
+        String str = StringUtils.join(list, ",");
         System.out.println(str);
     }
 
 
     public static void do19() {
-        Map<String,Object> map = new HashMap<>();
-        map.put("111","qqq");
-        map.put("222","aaa");
-        map.put("333","sss");
+        Map<String, Object> map = new HashMap<>();
+        map.put("111", "qqq");
+        map.put("222", "aaa");
+        map.put("333", "sss");
         String str = JSONObject.toJSONString(map);
         JSONObject json = JSONObject.parseObject(str);
 
@@ -298,10 +296,10 @@ public class TestMap {
 
 
     public static void do20() {
-        String[] arr = {"111","222","333"};
-        String str2 = ArrayUtils.toString(arr,",");
+        String[] arr = {"111", "222", "333"};
+        String str2 = ArrayUtils.toString(arr, ",");
         System.out.println(str2);
-        String str3 = StringUtils.join(arr,",");
+        String str3 = StringUtils.join(arr, ",");
         System.out.println(str3);
     }
 
@@ -314,9 +312,25 @@ public class TestMap {
     }
 
 
+    /*finally语句块是跟随在try{}后面的，当try执行结束后或者try中抛出异常了，才执行finally语句块*/
+    public static void do22() {
+        try {
+            String arr = "  q q q   ";
+            System.out.println(arr.length());
+            int n = 1 / 0;
+            String str2 = arr.trim();
+            System.out.println(str2.length());
+            System.out.println(str2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("执行finally操作");
+        }
+        System.out.println("方法结束");
+    }
 
 
     public static void main(String[] args) {
-        do21();
+        do22();
     }
 }
