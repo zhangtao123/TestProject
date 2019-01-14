@@ -330,7 +330,15 @@ public class TestMap {
     }
 
 
+    public static void do23(int n) {
+        for (int i = 0; i < 5; i++) {
+            n = (n * 5) + 1;
+        }
+        System.out.println(n);
+    }
+
+
     public static void main(String[] args) {
-        do22();
+        do23(3);
     }
 }
