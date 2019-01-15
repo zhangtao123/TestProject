@@ -1,5 +1,11 @@
 package src.thread.package19;
-/*获取计算结果和判断任务是否完成*/
+
+/**
+ * @Description: java类作用描述
+ * @Author: zhangtao
+ * @CreateDate: 2019/1/15 22:01
+ * @Version: 1.0
+ */
 public interface Future<T> {
     T get() throws InterruptedException;
 
