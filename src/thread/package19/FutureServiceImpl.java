@@ -19,15 +19,17 @@ public class FutureServiceImpl<IN, OUT> implements FutureService<IN, OUT> {
         return FUTURE_THREAD_PREFIX + nextCounter.getAndIncrement();
     }
 
+    /**源代码*/
     @Override
     public Future<?> submit(Runnable runnable) {
         final FutureTask<Void> future = new FutureTask<>();
         new Thread(() -> {
-            runnable.run();
+            new Thread(runnable).start();
             future.finish(null);
         }, getNextName()).start();
         return future;
     }
+
 
     @Override
     public Future<OUT> submit(Task<IN, OUT> task, IN input) {

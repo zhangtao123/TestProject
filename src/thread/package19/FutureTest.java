@@ -14,20 +14,17 @@ import java.util.logging.SimpleFormatter;
  * Description:
  */
 public class FutureTest {
-    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
     public void do1() throws InterruptedException {
         FutureService<Void, Void> service = FutureService.newService();
         Future<?> future = service.submit(() -> {
             try {
-                System.out.println("开始时间："+sdf.format(System.currentTimeMillis()));
-                TimeUnit.SECONDS.sleep(10);
-                System.out.println("sleep结束时间："+sdf.format(System.currentTimeMillis()));
+                TimeUnit.SECONDS.sleep(5);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("T am finish done,当前时间："+sdf.format(System.currentTimeMillis()));
+            System.out.println("I am finish do.");
         });
-        System.out.println("result:" + future.get()+"当前时间："+sdf.format(System.currentTimeMillis()));
+        System.out.println("result:" + future.get());
     }
 
 
