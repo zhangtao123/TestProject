@@ -1,9 +1,6 @@
 package src.thread.package19;
 
-import java.text.SimpleDateFormat;
-import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.SimpleFormatter;
 
 /**
  * Created with IntelliJ IDEA.
