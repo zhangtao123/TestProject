@@ -28,9 +28,9 @@ public class TestMap {
 //        Map<String,Object> map2 = Collections.synchronizedMap();
 //
 //        List<Integer> list = new LinkedList<Integer>();
-
-        StringBuffer sb = new StringBuffer();
-        sb.append("aaa");
+	
+        StringBuffer sbsbtest = new StringBuffer();
+        sbsbtest.append("asdfghjkl");
 
 
         StringBuilder sb1 = new StringBuilder();
