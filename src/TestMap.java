@@ -23,7 +23,8 @@ public class TestMap {
 
 
     public static void do1() {
-//        Map<String,Object> map1 = new ConcurrentHashMap<String, Object>();
+		
+        Map<String,Object> mapTest = new ConcurrentHashMap<String, Object>();
 //
 //        Map<String,Object> map2 = Collections.synchronizedMap();
 //
