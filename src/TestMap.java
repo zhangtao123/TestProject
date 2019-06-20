@@ -43,7 +43,7 @@ public class TestMap {
 
     public static void do2() {
         Map<Integer, String> map = new HashMap<Integer, String>();
-        map.put(3, "111");
+        map.put(312, "111testtesttest");
 
 
         Integer in = map.keySet().iterator().next();
