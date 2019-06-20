@@ -55,13 +55,13 @@ public class TestMap {
 
     public static void do3() {
         Map<String, Integer> map = new HashMap();
-        map.put("1", 8);
-        map.put("2", 12);
-        map.put("3", 53);
-        map.put("4", 33);
-        map.put("5", 11);
-        map.put("6", 3);
-        map.put("7", 3);
+        map.put("11", 8);
+        map.put("12", 12);
+        map.put("13", 53);
+        map.put("14", 33);
+        map.put("15", 11);
+        map.put("16", 3);
+        map.put("17", 3);
         List<Map.Entry<String, Integer>> list = new ArrayList(map.entrySet());
         Collections.sort(list, (o1, o2) -> (o2.getValue() - o1.getValue()));
         System.out.println(list.get(0).getKey());
