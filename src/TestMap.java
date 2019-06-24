@@ -1,14 +1,19 @@
 package src;
 
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;
+import src.util.CommonConstants;
 
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.Lock;
 import java.util.stream.Collectors;
 
 /**
@@ -347,7 +352,60 @@ public class TestMap {
     }
 
 
+
+    public static void do25() {
+
+        String str = "///business/test";
+        System.out.println(str.length());
+        System.out.println(StringUtils.isBlank(" "));
+    }
+
+
+
+    public static void do26() {
+
+        Thread t = new Thread(() -> System.out.println("1111"), "123");
+        t.start();
+
+    }
+
+    public static void do27() {
+        DecimalFormat df2 = new DecimalFormat("###.00");
+        Double d = 2.3;
+        System.out.println(df2.format(d));
+    }
+
+
+
+    public static void do28(){
+        SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");//设置日期格式
+        System.out.println(df.format(LocalDateTime.now()));
+    }
+
+
+    public static void do29(){
+        String str = "  ";
+        String[] arr = str.split("\\s+");
+        System.out.println(arr.length);
+        List<String> list =  Arrays.asList(arr);
+        System.out.println(list);
+    }
+
+
+    public static void do30(){
+        Person p = new Person();
+        p.setAge(10);
+        p.setName("111");
+        System.out.println(JSON.toJSONString(p, CommonConstants.FEATURES));
+        String p2 = "sssss";
+        System.out.println(JSON.toJSONString(p2, CommonConstants.FEATURES));
+        int p3 = 123;
+        System.out.println(JSON.toJSONString(p3, CommonConstants.FEATURES));
+
+    }
+
+
     public static void main(String[] args) {
-        do24();
+        do30();
     }
 }
