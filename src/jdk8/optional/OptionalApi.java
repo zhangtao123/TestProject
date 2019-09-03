@@ -1,5 +1,8 @@
 package src.jdk8.optional;
 
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
 
@@ -41,7 +44,14 @@ public class OptionalApi {
         System.out.println(optional.orElseGet(() -> "123"));
     }
 
+
+    protected final <T> List<T> removeDuplicates(List<T> list) {
+        return new ArrayList<>(new LinkedHashSet<>(list));
+    }
+
     public static void main(String[] args) {
+
+        removeDuplicates();
         //ofTest();
         //emptyTest();
         //ofNullableTest();
